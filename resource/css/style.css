@@ -1,0 +1,736 @@
+/*------------------------------------
+Navigasi Utama dan Header
+--------------------------------------*/
+.navbar-default .navbar-brand {
+	margin-bottom: 15px;
+    color: #fff;
+}
+.navbar-default .navbar-header img{
+    width: 120px;
+}
+.navbar-default {
+    font-size: 14px;
+    background-color: #fff;
+    border-width: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+}
+.navbar-default .navbar-nav>li>a {
+	margin-top: 5px;
+    color: #00e4c1;
+    background-color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #000000;
+    background-color: #00e4c1;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #00e4c1;
+}
+
+/*------------------------------------
+Search Pencarian
+--------------------------------------*/
+.searchbardiv{
+	display: block;
+	position: fixed;
+	background-color: #00e4c1;
+	top: 50px;
+	right: 0px;
+	z-index: 1001;
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+	margin: 0px;
+}
+.buttonsearch{
+	position: fixed;
+	top :20px;
+	float: right;
+	right: 0px;
+	margin-right: 10px;
+	background-color: transparent;
+	border: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+}
+.buttonsearch:hover{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 0px;
+	color: #000000;
+
+}
+.buttonsearch:focus{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 0px;
+
+}
+#formsearch{
+	display: none;
+}
+.glyphicon.glyphicon-search {
+	font-size: 18px;
+}
+#searchbox {
+	
+	box-shadow: none;
+	padding: 8px 14px;
+}
+#searchbox:hover {
+	box-shadow: none;
+}
+
+.form-control:focus {
+	border-color: #ccc;
+	}
+
+
+.navbar-toggle {
+	padding-top: 15px;
+	margin-right: 35px;
+	border: none;
+	background: transparent !important;
+}
+.navbar-toggle:hover {
+	background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+	width: 22px;
+	transition: all 0.2s;
+	color: #fff;
+}
+.navbar-toggle .top-bar {
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+	opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+	transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+	opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+	transform: rotate(0);
+}
+
+
+/*----------------------------------------
+Home
+------------------------------------------*/
+
+.page-header{
+	color: #808080;
+}
+.read-more{
+	color: #00e4c1;
+}
+.blog-tittle{
+	color: #808080;
+}
+.blog-tittle:hover{
+	color: #00e4c1;
+	text-decoration: none;
+}
+.caption h4 a{
+	color: #00e4c1;
+}
+.caption h4 a:hover{
+  color: #00e4c1;
+  text-decoration: none;
+}
+.caption h4{
+	color: #808080;
+}
+.thumbnail{
+    border:1;
+    box-shadow:0;
+    border-radius:0;
+    border-color: #ececec;
+}
+
+.thumbnail:hover{
+    border:1;
+    box-shadow:0;
+    border-radius:0;
+    border-color: #00e4c1;
+}
+
+.product-single{
+	position: relative;
+}
+.product-thumb {
+  	position: relative;
+}
+
+.product-thumb img {
+  	width: 100%;
+  	height: 300px;
+}
+.product-single:hover .product-view{
+	display: block;
+    -webkit-animation: fadeInUp 400ms;
+	animation: fadeInUp 400ms;
+}
+.product-view{
+ 	display: none;
+  	position: absolute;
+  	top: 0;
+  	height: 100%;
+  	background:#00e4c1;
+  	width: 100%;
+  	text-align: center;
+  	opacity:0.9;
+}
+.product-view .nav-pills {
+  	padding: 0;
+ 	display: inline-block;
+ 	margin-top: -26px;
+  	top: 50%;
+  	position: relative;
+}
+.product-view .nav-pills li {
+  	display: inline-block;
+  	margin: 0 5px;
+}
+.product-view .nav-pills li a {
+  	color: #fff;
+  	border: 1px solid #fff;
+  	width: 60px;
+  	height: 40px;
+  	line-height: 38px;
+  	text-align: center;
+  	padding: 0;
+  	border-radius: 0px;
+    -webkit-animation: scaleIn 400ms linear 100ms both;
+  	animation: scaleIn 400ms linear 100ms both;
+    -webkit-transition: all 0.9s ease;
+  	transition: all 0.9s ease;
+}
+
+.product-view .nav-pills li a:hover {
+  	color: #000000;
+  	border-color: #000000;
+  	background-color: #fff;
+    -webkit-transition: all 0.9s ease;
+  	transition: all 0.9s ease;
+}
+.btn-join{
+	background-color: #00e4c1;
+	color: #fff;
+}
+.btn-join:hover{
+	background-color: #4cf5bf;
+	color: #fff;
+}
+.well{
+	background-color: #dcfbf4;
+}
+.well h4{
+	color: #808080;
+}
+.pagination li a {
+	color: #00e4c1;
+}
+.pagination > .active > a{
+  	z-index: 3;
+  	color: #fff;
+  	cursor: default;
+  	background-color: #00e4c1;
+  	border-color: #00e4c1;
+}
+.pagination > .active > a:hover{
+  	z-index: 3;
+  	color: #fff;
+  	cursor: default;
+  	background-color: #4cf5bf;
+  	border-color: #00e4c1;
+}
+.img-bloghome{
+  height: 200px;
+  width: 100%;
+}
+
+/*------------------------------------
+Kategori
+--------------------------------------*/
+.area-kategori{
+	padding-bottom: 30px;
+}
+.product-categori{
+	position: relative;
+}
+.product-kategori {
+  	position: relative;
+}
+
+.product-kategori img {
+  	width: 100%;
+  	height: 250px;
+}
+.product-categori:hover .product-view{
+	display: block;
+    -webkit-animation: fadeInUp 400ms;
+	animation: fadeInUp 400ms;
+}
+.product-view{
+ 	display: none;
+  	position: absolute;
+  	top: 0;
+  	height: 100%;
+  	background:#00e4c1;
+  	width: 100%;
+  	text-align: center;
+  	opacity:0.9;
+}
+.product-view .nav-pills {
+  	padding: 0;
+ 	  display: inline-block;
+ 	  margin-top: -26px;
+  	top: 50%;
+  	position: relative;
+}
+.product-view .nav-pills li {
+  	display: inline-block;
+  	margin: 0 5px;
+}
+.product-view .nav-pills li a {
+  	color: #fff;
+  	border: 1px solid #fff;
+  	width: 60px;
+  	height: 40px;
+  	line-height: 38px;
+  	text-align: center;
+  	padding: 0;
+  	border-radius: 0px;
+    -webkit-animation: scaleIn 400ms linear 100ms both;
+  	animation: scaleIn 400ms linear 100ms both;
+    -webkit-transition: all 0.9s ease;
+  	transition: all 0.9s ease;
+}
+
+.product-view .nav-pills li a:hover {
+  	color: #000000;
+  	border-color: #000000;
+  	background-color: #fff;
+    -webkit-transition: all 0.9s ease;
+  	transition: all 0.9s ease;
+}
+
+.load-area{
+  padding-bottom: 30px;
+}
+
+/*------------------------------------
+Sidebar
+--------------------------------------*/
+.sidebar h3 {
+  	color: #808080;
+  	margin-top: 0;
+  	border-bottom: 1px solid #ececec;
+  	margin-bottom: 6px;
+  	padding-bottom: 8px;
+}
+.sidebar-item{
+  	margin-bottom: 48px;
+}
+.navbar-stacked li{
+	border-bottom: 1px solid #ececec;
+}
+.navbar-stacked li:last-child{
+	border-bottom: 0px solid #ececec;
+}
+.navbar-stacked li a{
+	font-size: 16px;
+  	color: #808080;
+ 	padding: 8px 0;
+  	padding-left: 0;
+}
+.navbar-stacked li a:hover{
+	background: none;
+  	margin-left: 10px;
+  	color: #00e4c1;
+  	opacity: 1
+}
+.sidebar-item .media{
+  	border-bottom: 1px solid #ececec;
+  	padding-bottom: 10px;
+  	padding-top: 21px;
+  	margin-top: 0;
+  	transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.sidebar-item .media img{
+    width: 52px;
+    height: 52px;
+}
+.sidebar-item .media:last-child{
+  	border-bottom: 0px solid #ececec;  
+  	padding-bottom: 0; 
+}
+.sidebar-item .media:hover{
+  	border-left: 2px solid #00e4c1;
+  	padding-left: 5px;
+  	transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.sidebar-item .media .media-body h4 a{
+  	color: #808080;
+  	font-size: 16px;
+}
+.sidebar-item .media:hover.media .media-body h4 a{
+  	color: #00e4c1;
+  	transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.sosial-media li{
+	display:inline-block;
+}
+
+.sosial-media img{
+	height: 56px;
+	padding-left: 25px;
+}
+
+/*------------------------------------
+Detail Produk
+--------------------------------------*/
+.detail-produk{
+	padding-bottom: 30px;
+}
+.detail-produk h3{
+	color: #808080;
+  	margin-top: 0;
+  	margin-bottom: 6px;
+  	padding-bottom: 8px;
+}
+.image-detail{
+	padding-bottom: 30px;
+}
+.image-detail img{
+	width: 100%;
+  	height: 300px;
+  	border:3px solid #00e4c1;
+}
+.detail-deskripsi{
+	border-bottom: 1px solid #ececec;
+  	margin-bottom: 6px;
+  	padding-bottom: 8px;
+}
+.detail-deskripsi h4{
+	color: #808080;
+}
+.harga{
+	color: #de1000;
+}
+.harga2{
+  color: #808080;
+}
+.diskon {
+  color: #808080;
+  font-size: 14px;
+}
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+ }
+ .social {
+    -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+ }
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ .beli-tombol{
+ 	  padding-top: 15px;
+ 	  padding-bottom: 15px;
+ }
+ .other-product{
+    padding-bottom: 30px;
+ }
+
+
+/*------------------------------------
+Blog
+--------------------------------------*/
+.blog-list{
+	margin-top: 0;
+	padding-bottom: 30px;
+}
+.blog-list h2 a{
+	color: #808080;
+	font-size: 23px;
+	text-decoration: none;
+ }
+ .blog-list h2 a:hover{
+	color: #00e4c1;
+	font-size: 23px;
+	text-decoration: none;
+ }
+
+ .blog-list a img{
+	width: 100%;
+	height: 400px;
+ }
+
+ /*------------------------------------
+Detail Blog
+--------------------------------------*/
+.detail-post{
+	padding-bottom: 30px;
+}
+.detail-post img{
+	width: 100%;
+	height: 400px;
+}
+
+/*------------------------------------
+Kontak
+--------------------------------------*/
+.ourmap{
+	width: 100%;
+	height: 300px;
+}
+
+/*------------------------------------
+Reseller
+--------------------------------------*/
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('../images/reseller-bg.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.layer{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.headline {
+    padding: 120px 0;
+}
+
+.headline h1 {
+    font-size: 50px;
+    color: #fff;
+}
+.headline h2 {
+    font-size: 40px;
+    color: #00e4c1;
+}
+.reseller-header{
+	color: #00e4c1;
+	text-align: center;
+	padding-top: 20px;
+}
+.keuntungan{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.keuntungan:hover{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.keuntungan h3{
+	color: #00e4c1;
+	text-align: center;
+}
+.keuntungan p{
+	color: #808080;
+	text-align: center;
+}
+.reseller-join{
+	color: #00e4c1;
+	overflow: hidden;
+ 	text-align: center;
+}
+.reseller-join:before, .reseller-join:after{
+	background-color: #808080;
+ 	content: "";
+ 	display: inline-block;
+ 	height: 2px;
+ 	position: relative;
+ 	vertical-align: middle;
+ 	width: 50%;
+}
+.reseller-join:before {
+ 	right: 0.5em;
+ 	margin-left: -50%;
+}
+.reseller-join:after {
+ 	left: 0.5em;
+ 	margin-right: -50%;
+}
+.reseller-area{
+	padding-bottom: 30px;
+}
+.reseller-area label, p{
+	color: #808080;
+}
+.reseller-login{
+	color: #808080;
+}
+
+/*------------------------------------
+Join Reseller
+--------------------------------------*/
+.join-area{
+	padding-bottom: 30px;
+}
+.join-area label, small{
+	color: #808080;
+}
+
+
+/*------------------------------------
+Footer
+--------------------------------------*/
+.copyright p{
+	color: #808080;
+	float: left;
+}
+.page-foot li {
+	display: inline; 
+}
+.page-foot li a{
+	float: right;
+	color: #00e4c1;
+	text-decoration: underline; 
+	padding-right: 3px;
+	padding-left: 3px;
+}
+.page-foot li a:hover{
+	float: right;
+	color: #4cf5bf;
+	text-decoration: none; 
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display:none;
+}
+
+/*-------------------------
+         modal
+---------------------------*/
+
+.modal  {
+    
+}
+
+
+/*---------------------------
+          signup
+-----------------------------*/
+.banner-area{
+  padding-top: 30px;
+}
+.signup-banner{
+  background-color: #dcfbf4;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.signup-banner img{
+}
+
+.signup-banner ol{
+  padding-top: 10px;
+}
+
+/*---------------------------
+halaman pencarian
+-----------------------------*/
+.count-search{
+    padding: 10px 15px 10px;
+    background-color: #dcfbf4;
+    border-left: 3px solid #01d0a1;
+    color: #808080;
+}
+.pad-search{
+    padding-bottom: 20px;
+}
+
+/*--------------------------------
+halaman Reseller 
+---------------------------------- */
+.welcome-reseller{
+    padding: 10px 15px 10px;
+    background-color: #dcfbf4;
+    border-left: 3px solid #01d0a1;
+    color: #808080;
+}
+
+.hero-widget { text-align: 
+    center; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+.hero-widget .icon { 
+    display: block; 
+    font-size: 70px; 
+    line-height: 96px; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+.hero-widget var { 
+    display: block; 
+    height: 64px; 
+    font-size: 50px; 
+    line-height: 30px; 
+    font-style: normal; 
+}
+.hero-widget label { 
+    font-size: 17px; 
+}
+.hero-widget .options { 
+    margin-top: 10px; 
+}
+
+
+/*--------------------------------
+reseller koleksi produk
+---------------------------------- */
+.reseller-koleksi{
+  padding-top: 20px;
+}
+.reseller-koleksi img{
+    width: 100%;
+    height: 265px;
+}

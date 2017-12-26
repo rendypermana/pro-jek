@@ -1,0 +1,209 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 100%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+
+/* Mobile View */
+@media(max-width:767px) {
+    /*---------------------------------------
+    Navigasi
+    -----------------------------------------*/
+    
+    .navbar-default {
+        font-size: 14px;
+        background-color: #00e4c1;
+        border-width: 0px;
+        border-radius: 0px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        margin-top: 5px;
+        color: #fff;
+        background-color:#00e4c1;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:focus {
+        color: #000000;
+        background-color: #fff;
+    }
+
+    .dropdown-menu li a{
+        background-color: #fff;
+    }
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    /*---------------------------------------
+    Image carosiel
+    -----------------------------------------*/
+    header.carousel {
+        display: none;
+    }
+
+    /*---------------------------------------
+    Image Product
+    -----------------------------------------*/
+    .product-thumb img {
+        width: 100%;
+        height: 100%;
+    }
+   
+    .product-kategori img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-detail img{
+        width: 100%;
+        height: 100%;
+        border:none;
+    }
+
+   .sidebar-item .media a img{
+        width: 52px;
+        height: 52px;
+    }
+
+
+
+    /*------------------------------------
+    Blog
+    --------------------------------------*/
+    .blog-list a img{
+        width: 100%;
+        height: auto;
+    }
+    .detail-post img{
+        width: 100%;
+        height: auto;
+    }
+
+    /*------------------------------------
+    Kontak
+    --------------------------------------*/
+
+
+
+    /*------------------------------------
+    Reseller
+    --------------------------------------*/
+    .headline h1 {
+        font-size: 30px;
+        border:#fff dotted 3px;
+    }
+    .headline h2 {
+        font-size: 27px;
+    }
+
+
+    /*---------------------------------------
+    footer
+    -----------------------------------------*/
+    footer {
+    margin: 50px 0;
+    text-align: center;
+    }
+    .brand-foot p{
+        float: none;
+    }
+    .other-foot li {
+        display: inline-block;
+    }
+    .other-foot li a{
+        float:none;
+        padding-right: 3px;
+        padding-left: 3px;
+        text-decoration: none;
+    }
+
+
+
+}
+

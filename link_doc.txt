@@ -1,0 +1,6 @@
+link produk by id
+<?php $url = $produk->nama_produk; $nama = strtolower($url); $title = url_title($nama);?>
+<?=anchor('page_produk/detail/'.$produk->id_produk .'/'.$nama, 'Beli')?>
+
+<a href="<?php echo base_url() ?>/index.php/page_produk/detail/<?=$produk->id_produk?>/<?=$title?>"><?=$produk->nama_produk?></a>
+
