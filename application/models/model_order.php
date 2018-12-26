@@ -10,7 +10,7 @@ class Model_order extends CI_Model {
 			'due_date'	=> date('Y-m-d H:i:s', mktime( date('H'),date('i'),date('s'),date('m'),date('d') + 1,date('Y'))),
 			'status'	=> 'unpaid'
 		);
-		$this->db->insert('invoices', $invoice);
+		$this->db->insert('d_invoices', $invoice);
 		$invoice_id = $this->db->insert_id();
 		
 		// put ordered items in orders table

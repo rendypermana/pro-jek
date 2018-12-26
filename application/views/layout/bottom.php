@@ -14,19 +14,28 @@
                   <div class="footer-text">
                     <ul>
                       <li>
-                        <i class="pe-7s-map-marker"></i>
-                        <p>My Company, 45 Puffin Street 1245</p>
-                        <p class="rs">Poffinville France.</p>
+                        <?php $query = $this->db->where('id_setting', 2)->limit(1)->get('d_setting');
+                          foreach ($query->result() as $row)
+                          {
+                            echo"<i class='pe-7s-map-marker'></i>";
+                            echo"<p>$row->value</p>";                        }
+                        ?>
                       </li>
                       <li>
-                        <i class="pe-7s-call"></i>
-                        <p>+201 (987) 6641 053</p>
-                        <p>+202 (987) 6641 056</p>
+                        <?php $query = $this->db->where('id_setting', 1)->limit(1)->get('d_setting');
+                          foreach ($query->result() as $row)
+                          {
+                            echo"<i class='pe-7s-call'></i>";
+                            echo"<p>$row->value</p>";                        }
+                        ?>
                       </li>
                       <li>
-                        <i class="pe-7s-mail-open"></i>
-                        <p>info@domainname.com</p>
-                        <p>company@outlook.com</p>
+                        <?php $query = $this->db->where('id_setting', 3)->limit(1)->get('d_setting');
+                          foreach ($query->result() as $row)
+                          {
+                            echo"<i class='pe-7s-mail-open'></i>";
+                            echo"<p>$row->value</p>";                        }
+                        ?>
                       </li>
                     </ul>
                   </div>
@@ -90,13 +99,6 @@
             <div class="row">
               <div class="col-xs-12 col-sm-6">
                 <div class="paypal social-icon">
-                  <ul>
-                    <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cc-stripe"></i></a></li>
-                  </ul>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6">

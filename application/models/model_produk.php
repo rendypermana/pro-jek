@@ -73,7 +73,7 @@ class Model_produk extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
-
+	//promo tampil
 	public function colek_omo(){
 		$this->db->select('*');
 		$this->db->from('d_promo');
@@ -82,6 +82,16 @@ class Model_produk extends CI_Model {
 		$this->db->limit(1);
 		$query = $this->db->get();
 		return $query->result();
+	}
+	//promo aktif
+	public function promo_aktif(){
+		$hasil = $this->db->where('status', 'aktif')
+						  ->get('d_promo');
+		if($hasil->num_rows() > 0){
+			return $hasil->result();
+		} else {
+			return array();
+		}
 	}
 
 	//model fungsi mendapatkan produk perkategori
@@ -111,7 +121,7 @@ class Model_produk extends CI_Model {
 
     }
 
-
+   
 
 
     //model fungsi mendapatkan produk di home

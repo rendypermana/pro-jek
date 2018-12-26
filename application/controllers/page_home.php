@@ -61,7 +61,9 @@ class Page_home extends CI_Controller {
   		$data['slider'] = $this->model_slide->semua_slide();
   		$data['produk'] = $this->model_produk->tampil_home();
   		$data['promo'] = $this->model_produk->colek_omo();
-  		 // var_dump($data['promo']);
+  		$data['proktif'] = $this->model_produk->promo_aktif();
+
+  		 // var_dump($data['ewe']);
   		 // exit();
 		$this->load->view('home',$data);
 	}

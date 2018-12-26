@@ -54,7 +54,7 @@
                         <div class="col-md-6 col-sm-4">
                             <div class="left-header clearfix">
                                 <ul>
-                                <?php $query = $this->db->where('id_setting', 1)->limit(1)->get('d_setting');;
+                                <?php $query = $this->db->where('id_setting', 1)->limit(1)->get('d_setting');
                                 foreach ($query->result() as $row)
                                     {
                                         echo"<li>";
@@ -69,8 +69,15 @@
                             <div class="right-header">
                                 <ul>
                                     <li><a href="my-account.html"><i class="fa fa-user"></i>My account</a></li>
-                                    <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>My cart</a></li>
+                                   <!--  <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>My cart</a></li> -->
                                     <li><a href="login.html"><i class="fa fa-lock"></i>Login</a></li>
+                                    <li>
+                                        <?php
+                $text_cart_url  = '<span class="fa fa-shopping-cart" aria-hidden="true"></span>';
+                $text_cart_url .= ' Inside Cart: '. $this->cart->total_items() .' items';
+            ?>
+            <?=anchor('page_produk/cart', $text_cart_url)?>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -337,10 +344,15 @@
                                 <div class="right-header re-right-header">
                                     <ul>
                                         <li class="re-icon tnm"><i class="fa fa-search" aria-hidden="true"></i>
-                                            <form method="get" id="searchform" action="#">
-                                                <input type="text" value="" name="s" id="ws" placeholder="Search product..." />
+                                            <!-- <form method="get" id="searchform" action="#"> -->
+                                                <?php 
+                                                $frm_cari = array('name' => 'frm_cari', 'role' => 'search', 'id'=>'searchform'); 
+                                                echo form_open('page_produk/cari', $frm_cari);
+                                                ?>
+                                                <input type="text" value="" name="search" id="ws" placeholder="Search product..." />
                                                 <button type="submit"><i class="pe-7s-search"></i></button>
-                                            </form>
+                                                <?php echo form_close(); ?>
+                                         <!--    </form> -->
                                         </li>
                                     </ul>
                                 </div>
